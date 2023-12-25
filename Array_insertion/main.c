@@ -15,7 +15,7 @@ int main()
         scanf("%d",&arr[i]);
     }
 
-    printf("Enter the position where you want to insert the element : ");
+    printf("Enter the index (starting with 0) where you want to insert the element : ");
     scanf("%d",&pos);
     printf("Enter the element you want to insert : ");
     scanf("%d",&key);
@@ -27,9 +27,9 @@ int main()
     arr[pos] = key;
     size++;
     printf("The new array is : ");
-    
+
     for(int k = 0; k < size; k++){
-        printf("%d",arr[k]);
+        printf("%d  ",arr[k]);
     }
     return 0;
 }
